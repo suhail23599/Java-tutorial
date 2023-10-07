@@ -2,9 +2,8 @@ import java.lang.*;
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        String name;
-        Scanner s = new Scanner(System.in);
-        System.out.println(Integer.MIN_VALUE);
-        System.out.println(Integer.BYTES);
+        byte b1 = 10;
+        byte b2 = 0b1010;
+        System.out.println(b1 + b2);
     }
 }
