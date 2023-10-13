@@ -2,32 +2,33 @@ import java.lang.*;
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-        System.out.println(a + "" + b);
+        /**
+        String str = "Java";
 
-        System.out.println("sum" + a + b ); // sum1020
+        char []c = {'a', 'b', 'c'};
+        String str1 = new String(c); // object will be created in heap
 
-        System.out.println(a + b + "sum" ); // 30sum
+        byte []b = {65, 66, 67};
+        String str2 = new String(b);
+        System.out.println(str2);
 
-        // formatted output
-        float f = 2.4f;
-        char c = 'a';
-        int num = 10;
-        System.out.printf("hello %f \n", f);
+        String str3 = new String("JAVA");
+         **/
 
-        System.out.printf("%1$d %1$d \n", num); // 1$ -> first argument
+        String str1 = "Python";
+        String str2 = new String ("python");
+        System.out.println(str1 == str2);
 
-        int num1 = 5;
-        System.out.printf("%5d \n", 5); // width -5
-        System.out.printf("%05d \n", 5); // flag - 0, fill the empty space w zero
+        String str3 = "Python";
 
-        int neg = -10;
-        System.out.printf("%(5d \n", neg); // flag - (, if num is neg it will be enclosed in (), for positive no ()
+        System.out.println(str1 == str3);
 
-        System.out.printf("%+5d \n", neg); // flag - +, it will print the sign of number
-
-        float f_num = 12.453f;
-        System.out.printf("%6.3f \n", f_num); // precision .2 places,only 5 digits
+        String s1 = "Java";
+        String s2 = "Java";
+        String s3 = new String("Java");
+        String s4 = new String("Java").intern();
+        System.out.println((s1 == s2)+", String are equal."); // true
+        System.out.println((s1 == s3)+", String are not equal."); // false
+        System.out.println((s1 == s4)+", String are equal."); // true
     }
 }
